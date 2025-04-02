@@ -1,0 +1,42 @@
+/* Buttons */
+.edit-button {
+  background: #ffc107;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background: #dc3545;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.logout-button {
+  display: block;
+  width: 100%;
+  background: #dc3545;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.logout-button:hover {
+  background: #b52b3b;
+}
+
+.horaires-container-admin {
+  display: flex;
+  width: 100%;
+  .horaires-table-admin {
+    height: 100%;
+    width: 100%;
+  }
+}
