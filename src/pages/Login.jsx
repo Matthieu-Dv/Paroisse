@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // ✅ Importer useNavigate
 import { login } from '../components/Auth';
+import { NavLink } from 'react-router-dom';
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -39,6 +40,7 @@ const Login = () => {
         />
         <button type="submit">Se connecter</button>
       </form>
+      <NavLink to="/">Retourner à la page d'accueil</NavLink>
     </div>
   );
 };

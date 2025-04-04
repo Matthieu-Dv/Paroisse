@@ -6,6 +6,8 @@ import Login from './pages/Login';
 import AdminDashboard from './pages/Admin/AdminDashboard';
 import Sacrements from './pages/Sacrements';
 import Actualites from './pages/Actualites';
+import Contact from './pages/Contact';
+import Temoigner from './pages/Temoigner';
 
 function PrivateRoute({ user, children }) {
   return user ? children : <Navigate to="/login" />; // ✅ Redirige vers /login en cas de non-auth
@@ -27,6 +29,8 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/actualites" element={<Actualites />} />
         <Route path="/sacrements" element={<Sacrements />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/temoigner" element={<Temoigner />} />
         <Route
           path="/admin"
           element={

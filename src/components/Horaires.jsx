@@ -138,7 +138,7 @@ const Horaires = () => {
       </div>
       <hr />
       <div className="horaires-container">
-        <table className="horaires-table">
+        <table className="horaires-table accueil-paroissial">
           <caption>Accueil Paroissial</caption>
           <thead>
             <tr>
@@ -167,6 +167,7 @@ const Horaires = () => {
           </tbody>
         </table>
       </div>
+      <div className="separator"></div>
     </section>
   );
 };

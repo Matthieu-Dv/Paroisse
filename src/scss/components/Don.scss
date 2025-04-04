@@ -1,9 +1,10 @@
 .don {
-  background: linear-gradient(135deg, #f5ebe0, #e3c5a8); /* Dégradé doux */
+  background: linear-gradient(135deg, #fdf3e7, #e8c5a0); /* Beige plus clair */
   width: 100%;
-  padding: 50px 20px;
+  padding: 40px 20px;
   text-align: center;
-  border-top: 4px solid #c17835; /* Un orange plus chaleureux */
+  border-top: 5px solid #c17835; /* Léger renforcement */
+  box-sizing: border-box;
 }
 
 .don-container {
@@ -12,33 +13,52 @@
 }
 
 .don h2 {
-  font-size: 2.2rem;
-  color: #5c2c06; /* Marron profond */
+  font-size: 2.5rem;
+  color: #5c2c06; /* Marron plus affirmé */
   margin-bottom: 20px;
   font-weight: bold;
+  margin: 0;
 }
 
 .don p {
-  font-size: 1.3rem;
-  color: #333; /* Contraste plus lisible */
+  font-size: 1.4rem;
+  color: #4a3628; /* Marron foncé pour plus de lisibilité */
   margin-bottom: 20px;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 .don-button {
   display: inline-block;
-  background-color: #b85c38; /* Marron chaud et moderne */
+  background: linear-gradient(
+    135deg,
+    #b85c38,
+    #923d21
+  ); /* Bouton avec dégradé léger */
   color: white;
-  padding: 14px 24px;
-  font-size: 1.2rem;
-  border-radius: 8px; /* Plus arrondi pour un look plus doux */
+  padding: 16px 28px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  border-radius: 10px;
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 .don-button:hover {
-  background-color: #923d21;
-  transform: translateY(-2px); /* Effet subtil au survol */
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #923d21, #751f0f);
+  transform: translateY(-3px);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 760px) {
+  .don h2 {
+    font-size: 1.5rem;
+  }
+
+  .don p {
+    font-size: 1.1rem;
+  }
+
+  .don-button {
+    font-size: 1rem;
+  }
 }

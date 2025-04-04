@@ -3,3 +3,9 @@
 @import './components/Don.scss';
 @import './components/Horaires.scss';
 @import './pages/AdminDashboard.scss';
+@import './components/HomeActu.scss';
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans', sans-serif;
+}

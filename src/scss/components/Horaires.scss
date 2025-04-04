@@ -47,6 +47,10 @@
     border: 1px solid #ddd;
   }
 
+  .horaires-table tr:nth-child(even) {
+    background-color: #f9f3ec;
+  }
+
   thead {
     font-size: 1.1em;
   }
@@ -65,6 +69,16 @@
 
   .Événements {
     border: 3px solid #d17a22;
+  }
+  .accueil-paroissial {
+    border: 3px solid #020202;
+  }
+  .separator {
+    width: 60%;
+    height: 4px;
+    background: linear-gradient(to right, #d4a373, #8a4b08);
+    margin: 40px auto;
+    border-radius: 2px;
   }
 }
 @media screen and (max-width: 768px) {

@@ -1,9 +1,10 @@
 import React from 'react';
-
 import Navigation from '../components/Navigation';
 import Horaires from '../components/Horaires';
 import Don from '../components/Don';
 import Carte from '../components/Carte';
+import HomeActu from '../components/HomeActu';
+import { NavLink } from 'react-router-dom';
 
 const Home = () => {
   return (
@@ -13,20 +14,14 @@ const Home = () => {
       {/* Section de bienvenue */}
       <section className="hero">
         <h1>Bienvenue sur le site de la paroisse</h1>
-        <p>Convertissez-vous et croyez à l'Evangile</p>
       </section>
 
       {/* Section image inspirante */}
-      <section className="image-section">
+      <section className="video-section">
         <div>
-          <h2>
-            Bienvenue sur le site de la paroisse Saint Paul / Saint Martin !
-          </h2>
+          <h2>Paroisse Saint Paul / Saint Martin - Bonneuil sur Marne</h2>
           <div className="video">
-            <video
-              src="https://assets.codepen.io/6093409/hubspot-video-example.mp4"
-              controls
-              width="500"></video>
+            <video src="./simple-video.mp4" controls width="500"></video>
             <div>
               <h3>
                 "Dieu est amour, et celui qui demeure dans l’amour demeure en
@@ -47,39 +42,40 @@ const Home = () => {
 
       <Horaires />
       <Don />
-      <section className="accueil-actu">
-        <div className="carre">
-          <img src="/jubileo.jpg" alt="fiche jubileo" />
-          <div>
-            <h2>Fête diocésaine de l’Espérance</h2>
-            <p>
-              Un grand rassemblement à vivre en famille, en paroisse, mouvement
-              ou service, en invitant largement autour de soi. Une journée pour
-              se rencontrer, partager, fêter et célébrer autour de grands temps
-              : accueil festif, villages thématiques (témoins, rendez-vous,
-              idées, expression artistique, pépinière, stands, ressources,
-              démarche de réconciliation…)
-            </p>
-          </div>
-        </div>
-        <div className="carre">
-          <img src="/jubileo.jpg" alt="fiche jubileo" />
-          <div>
-            <h2>Fête diocésaine de l’Espérance</h2>
-            <p>
-              Un grand rassemblement à vivre en famille, en paroisse, mouvement
-              ou service, en invitant largement autour de soi. Une journée pour
-              se rencontrer, partager, fêter et célébrer autour de grands temps
-              : accueil festif, villages thématiques (témoins, rendez-vous,
-              idées, expression artistique, pépinière, stands, ressources,
-              démarche de réconciliation…)
-            </p>
-          </div>
-        </div>
-        <button>Voir plus d'actu</button>
-      </section>
+      <HomeActu />
       <Carte />
-      <footer>Contactez la paroisse : numéro de téléphone, adresse mail</footer>
+      <footer>
+        <div className="footer-section">
+          <ul>
+            <li>
+              <NavLink to="/contact">Contact</NavLink>
+            </li>
+            <li>
+              <a href="/"> Mentions légales</a>
+            </li>
+            <li>
+              <a href="/">Politique de confidentialité</a>
+            </li>
+            <li>
+              <NavLink to="/temoigner">Témoigner</NavLink>
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a href="/">Donner au denier</a>
+            </li>
+            <li>
+              <a href="/">Facebook</a>
+            </li>
+          </ul>
+        </div>
+        <div className="footer-bottom">
+          <p>&copy; 2025 Église de Bonneuil-sur-Marne - Tous droits réservés</p>
+          <NavLink to="/admin" className={'admin'}>
+            <img src="/logo-admin.webp" alt="logo église" />
+          </NavLink>
+        </div>
+      </footer>
     </div>
   );
 };
