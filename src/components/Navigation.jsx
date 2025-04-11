@@ -11,7 +11,7 @@ const Navigation = () => {
     <nav className="navigation">
       <div className="nav-container">
         {/* Logo */}
-        <div className="logo">Église de Bonneuil</div>
+        <div className="logo">Églises de Bonneuil-sur-Marne</div>
 
         {/* Bouton menu burger */}
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
