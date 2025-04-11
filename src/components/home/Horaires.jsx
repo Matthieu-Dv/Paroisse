@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { db } from '../firebase';
+import { db } from '../../firebase';
 import { collection, getDocs } from 'firebase/firestore';
 
 const Horaires = () => {
@@ -136,7 +136,6 @@ const Horaires = () => {
           ))}
         </div>
       </div>
-      <hr />
       <div className="horaires-container">
         <table className="horaires-table accueil-paroissial">
           <caption>Accueil Paroissial</caption>
@@ -167,7 +166,6 @@ const Horaires = () => {
           </tbody>
         </table>
       </div>
-      <div className="separator"></div>
     </section>
   );
 };

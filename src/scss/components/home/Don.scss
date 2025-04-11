@@ -1,10 +1,11 @@
 .don {
-  background: linear-gradient(135deg, #fdf3e7, #e8c5a0); /* Beige plus clair */
   width: 100%;
   padding: 40px 20px;
+  margin-top: 70px;
   text-align: center;
   border-top: 5px solid #c17835; /* Léger renforcement */
   box-sizing: border-box;
+  background: #f0f0f7;
 }
 
 .don-container {
@@ -13,15 +14,15 @@
 }
 
 .don h2 {
-  font-size: 2.5rem;
-  color: #5c2c06; /* Marron plus affirmé */
+  font-size: 2rem;
+  color: #7a1f1f; /* Marron plus affirmé */
   margin-bottom: 20px;
   font-weight: bold;
   margin: 0;
 }
 
 .don p {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   color: #4a3628; /* Marron foncé pour plus de lisibilité */
   margin-bottom: 20px;
   line-height: 1.8;
@@ -32,11 +33,11 @@
   background: linear-gradient(
     135deg,
     #b85c38,
-    #923d21
+    #7a1f1f
   ); /* Bouton avec dégradé léger */
   color: white;
   padding: 16px 28px;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
   border-radius: 10px;
   text-decoration: none;

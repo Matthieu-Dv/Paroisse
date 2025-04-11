@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   gap: 35px;
-  margin: 40px 8%;
+  margin: 0px 8%;
 
   .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
-    color: #5c2c06; /* Même marron profond que le titre du don */
+    color: #7a1f1f; /* Même marron profond que le titre du don */
     margin-bottom: 30px;
     font-weight: bold;
   }
@@ -18,9 +18,9 @@
     align-items: center;
     gap: 40px;
     padding: 20px;
-    background: #f9f5f0; /* Beige clair */
+
     border-radius: 12px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 24px rgba(67, 91, 122, 0.6);
   }
 
   .carre_2 {
@@ -29,8 +29,8 @@
 
   .carre img,
   .carre_2 img {
-    width: 350px;
-    height: auto;
+    width: 300px;
+    height: 360px;
     border-radius: 10px;
   }
 
@@ -41,8 +41,8 @@
   }
 
   h3 {
-    font-size: 1.8em;
-    color: #8b4513; /* Marron foncé */
+    font-size: 1.7em;
+    color: #7a1f1f;
   }
 
   p {
@@ -53,10 +53,10 @@
 
   .button-actu {
     align-self: center;
-    font-size: 1.5em;
+    font-size: 1.3em;
     padding: 12px 24px;
     border: none;
-    background: #8b4513; /* Marron foncé */
+    background: #7a1f1f;
     color: white;
     border-radius: 8px;
     cursor: pointer;
@@ -86,9 +86,10 @@
     }
     .carre img,
     .carre_2 img {
-      width: 90%;
-      max-width: 400px;
-      height: 390px;
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      border-radius: 0;
     }
     h3 {
       font-size: 1.3rem;

@@ -1,11 +1,14 @@
 @import './pages/Home.scss';
 @import './components/Navigation.scss';
-@import './components/Don.scss';
-@import './components/Horaires.scss';
+@import './components/home/Don.scss';
+@import './components/home/Horaires.scss';
 @import './pages/AdminDashboard.scss';
-@import './components/HomeActu.scss';
+@import './components/home/HomeActu.scss';
+@import './components/home/AccueilCure.scss';
+@import './components/actualites.scss';
+@import './components/Footer.scss';
 
 body {
   margin: 0;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: 'Playfair Display', serif;
 }

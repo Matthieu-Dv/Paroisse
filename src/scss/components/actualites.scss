@@ -1,0 +1,129 @@
+.news {
+  padding: 7% 11%;
+  background-color: #f1f4fa; // fond bleu très pâle
+
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    color: #2c3e50; // bleu nuit doux
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+  }
+
+  &__intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #5d6470; // gris bleuté
+    margin-bottom: 3rem;
+  }
+
+  &__card {
+    display: flex;
+    gap: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    padding: 30px;
+    margin-bottom: 3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    h3 {
+      font-size: 1.7rem;
+      color: #2c3e50; // titre plus doux
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+      color: #333;
+
+      a {
+        color: #7a1f1f; // bordeaux conservé ici
+        font-weight: 500;
+        text-decoration: underline;
+
+        &:hover {
+          color: #521212;
+        }
+      }
+    }
+  }
+
+  &__date {
+    margin-top: 1.5rem;
+    font-size: 0.95rem;
+    color: #7f8c8d; // gris doux
+    align-self: flex-end;
+    font-style: italic;
+  }
+}
+
+@media (max-width: 760px) {
+  .news {
+    padding: 15% 8%;
+
+    &__title {
+      font-size: 1.8rem;
+    }
+
+    &__intro {
+      font-size: 1.1rem;
+    }
+
+    &__card {
+      padding: 0;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0;
+
+      img {
+        width: 100%;
+        height: 210px;
+        object-fit: cover;
+        border-radius: 0;
+      }
+    }
+
+    &__content {
+      padding: 0 20px;
+
+      h3 {
+        font-size: 1.3rem;
+        text-align: center;
+        margin-bottom: 0;
+        color: #2c3e50;
+      }
+
+      p {
+        font-size: 0.9rem;
+        text-align: center;
+      }
+    }
+
+    &__date {
+      margin-top: 1.1rem;
+      margin-bottom: 1.1rem;
+      font-size: 0.9rem;
+    }
+  }
+}

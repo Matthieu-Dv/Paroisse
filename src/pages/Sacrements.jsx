@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 const Sacrements = () => {
   const navigate = useNavigate();
   return (
-    <div>
+    <div className="home">
       <Navigation />
       dvd
       <button onClick={() => navigate('/login')}>Se connecter</button>

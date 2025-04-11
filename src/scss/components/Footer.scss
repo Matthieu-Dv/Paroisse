@@ -1,0 +1,73 @@
+footer {
+  background-color: #444; // Gris légèrement plus foncé pour un meilleur contraste
+  width: 100%;
+  height: auto;
+  padding: 20px 0;
+
+  .footer-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px; // Meilleur espacement entre les colonnes
+    flex-wrap: wrap; // Gère l'affichage sur mobile
+    width: 100%;
+    padding-bottom: 15px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      margin: 5px 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: white; // Texte blanc pour un bon contraste
+      font-size: 1.2rem;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #ddd; // Effet hover plus doux
+      }
+    }
+  }
+  .footer-bottom {
+    text-align: center;
+    font-size: 1rem;
+    color: white; // Texte blanc pour la lisibilité
+    padding-top: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); // Ligne de séparation discrète
+
+    .admin {
+      display: flex;
+      justify-content: flex-end;
+      position: relative;
+      bottom: 38px;
+      right: 10px;
+      cursor: default;
+      margin: 0;
+
+      img {
+        width: 35px;
+        height: auto;
+      }
+    }
+  }
+}
+@media (max-width: 760px) {
+  footer {
+    .footer-section {
+      flex-direction: column;
+      gap: 30px;
+
+      a {
+        font-size: 1rem;
+      }
+    }
+    .footer-bottom {
+      font-size: 0.8rem;
+      padding-top: 5px;
+    }
+  }
+}

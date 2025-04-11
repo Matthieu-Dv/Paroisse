@@ -12,7 +12,8 @@ const Don = () => {
 
         <p>
           Votre don permet à notre paroisse de continuer à vivre : célébrer les
-          offices, loger le Curé, entretenir notre église, etc.
+          offices, accompagner les fidèles, entretenir l’église, et assurer les
+          besoins essentiels de la vie du prêtre.
           <strong> Chaque contribution compte !</strong>
         </p>
 
@@ -28,7 +29,7 @@ const Don = () => {
           className="don-button"
           aria-label="Faire un don"
           title="Lien vers le site du diocèse">
-          Je fais un don 🙏
+          Faire un don 🙏
         </a>
       </div>
     </section>
